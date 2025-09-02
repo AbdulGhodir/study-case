@@ -2,18 +2,15 @@
 using namespace std;
 
 int main() {
-    int n;
-    cout << "Masukkan jumlah bilangan Fibonacci: ";
-    cin >> n;
+    int n1 = 0, n2 = 1, next, i;
 
-    int a = 0, b = 1, c;
+    cout << "10 bilangan Fibonacci pertama: " << endl;
 
-    cout << "Deret Fibonacci: ";
-    for (int i = 1; i <= n; i++) {
-        cout << a << " ";
-        c = a + b;
-        a = b;
-        b = c;
+    for (i = 1; i <= 10; i++) {
+        cout << n1 << " ";
+        next = n1 + n2;
+        n1 = n2;
+        n2 = next;
     }
 
     cout << endl;
